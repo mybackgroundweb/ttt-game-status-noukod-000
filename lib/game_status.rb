@@ -50,6 +50,18 @@ def draw?(board)
     false
   end
 end
+
+def over?(board)
+  if draw?(board) ==true
+    true
+  elsif full?(board) == true
+    true
+  elsif full?(board) == false
+    true
+  else
+    false
+  end
+end
   
 def winner(board)
   winner = nil
@@ -64,3 +76,6 @@ def winner(board)
   winner
 end
 winner(board)
+
+
+
